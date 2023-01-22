@@ -1,0 +1,256 @@
+1. Inicio
+2. funcion principal()
+3. 		bandera, l <-- true 
+4. 		cont,i [0-n]<-- 0
+5. 		op,i [0-n]<-- 0
+6. 		indice,i[0-n]
+7. 		salida,x(1000)[{a-z},{A-Z},{BS}]
+8. 		mientras bandera == true entonces
+9. 			<< "+Ingresa 1 para crear un cuenta en Facebook.\n"
+    			+ "+Ingresa 2 para crear un cuenta en Twitter.\n"
+        		+ "+Ingresa 3 para crear un cuenta en Whatsapp.\n"
+        		+ "+Ingresa 4 para crear un cuenta en Telegram.\n"
+        		+ "+Ingresa 5 para crear un cuenta en Signal.\n"
+        		+ "+Ingresa 6 para crear un cuenta en Instagram.\n"
+        		+ "+Ingresa 7 para crear un cuenta en Flickr.\n"
+10.     	>>op
+11.			Si op == 1 entonces
+12.				salida = crearFacebook()
+13.				<<salida
+14.			De lo contrario 
+15.				Si op == 2 entonces
+16.				salida = crearTwitter()
+17.				<<salida
+18.				De lo contrario 
+19.					Si op == 3 entonces
+20.					salida = crearWhatsapp()
+21.					<<salida
+22.					De lo contrario 
+23.						Si op == 4 entonces
+24.						salida = crearTelegram()
+25.						<<salida
+26.						De lo contrario 
+27.							Si op == 5 entonces
+28.							salida = crearSignal()
+29.							<<salida
+30.							De lo contrario 
+31.								Si op == 6 entonces
+32.								salida = crearInstagram()
+33.								<<salida
+34.								De lo contrario 
+35.									Si op == 7 entonces
+36.									salida = crearFlickr()
+37.									<<salida
+38.									De lo contrario 
+39.										<< "ERROR opcion no exixte"
+40.									Finsi
+41.								Finsi
+41.							Finsi
+42.						Finsi
+43.					Finsi
+44.				Finsi
+45.			Finsi
+46.cont<-- cont + 1
+47.	<< "Ingrese 0 si desea terminar el proceso  de no ser asi ingrese cualquier 		numero: "
+48. >>indice
+49. si indice == 0 entonces
+50.		bandera<-- false 
+51. FinSi
+52.	<< obtenermensaje(cont)
+53. << "Número total de cuentas creadas: " + cont
+54.fin funcion principal
+55.funcion crearFacebook():x
+56.		salida,x(1000)[{a-z},{A-Z},{BS}]<-- ""
+57.		usuario,x(1000)[{a-z},{A-Z},{BS}]<-- ""
+58.		edad,i[0-n]
+59.		ciudad,x(1000)[{a-z},{A-Z},{BS}]<-- ""
+60.		pais,x(1000)[{a-z},{A-Z},{BS}]<-- ""
+61.		correoE,x(1000)[{a-z},{A-Z},{BS}]<-- ""
+62.		<<"Ingrese un nombre de usuario: "
+63.		>>usuario
+64		<<"Ingrese su edad: "
+65.		>>edad
+66.		<<"Ingrese su ciudad: "
+67.		>>ciudad
+68.		<<"Ingrese su pais: "
+69.		>>pais
+70.		<<"Ingrese su correo electronico: "
+71.		>>correoE
+72.		salida <-- salida + "Datos ingresados FACEBOOK\n"
+				+ "Nombre de Usuario: "+ usuario + "\n"
+                + "Su edad: " + edad + "\n"
+                + "Ciudad: " + ciudad + "\n"
+                + "Pais: " + pais + "\n"
+                + "Correo electronico: " + correo + "\n"
+73.		retornar salida
+74.fin funcion crearFacebook
+75.funcion crearWhatsapp():x
+76.		salida,x(1000)[{a-z},{A-Z},{BS}]<-- ""
+77.		usuario,x(1000)[{a-z},{A-Z},{BS}]<-- ""
+78.		edad,i[0-n]
+79.		ciudad,x(1000)[{a-z},{A-Z},{BS}]<-- ""
+80.		pais,x(1000)[{a-z},{A-Z},{BS}]<-- ""
+81.		telefono,i[0-n]
+82.		<<"Ingrese un nombre de usuario: "
+83.		>>usuario
+84.		<<"Ingrese su edad: "
+85.		>>edad
+86.		<<"Ingrese su ciudad: "
+87.		>>ciudad
+88.		<<"Ingrese su pais: "
+89.		>>pais
+90.		<<"Ingrese su telefono: "
+91.		>>telefono
+92.		salida <-- salida + "Datos ingresados Whatsapp\n"
+				+ "Nombre de Usuario: "+ usuario + "\n"
+                + "Su edad: " + edad + "\n"
+                + "Ciudad: " + ciudad + "\n"
+                + "Pais: " + pais + "\n"
+                + "Telefono: " + telefono + "\n"
+93.		retornar salida
+94.fin funcion crearWhatsapp
+95.funcion crearSignal():x
+96.		salida,x(1000)[{a-z},{A-Z},{BS}]<-- ""
+97.		usuario,x(1000)[{a-z},{A-Z},{BS}]<-- ""
+98.		edad,i[0-n]
+99.		ciudad,x(1000)[{a-z},{A-Z},{BS}]<-- ""
+100.	pais,x(1000)[{a-z},{A-Z},{BS}]<-- ""
+101.	telefono,i[0-n]
+102.	hobby,x(1000)[{a-z},{A-Z},{BS}]<-- ""
+103.	<<"Ingrese un nombre de usuario: "
+104.	>>usuario
+105.	<<"Ingrese su edad: "
+106.	>>edad
+107.	<<"Ingrese su ciudad: "
+108.	>>ciudad
+109.	<<"Ingrese su pais: "
+110.	>>pais
+111.	<<"Ingrese su telefono: "
+112.	>>telefono
+113.	<<"Ingrese su Hobby principal: "
+114.	>>hobby
+115.	salida <-- salida + "Datos ingresados Whatsapp\n"
+			+ "Nombre de Usuario: "+ usuario + "\n"
+            + "Su edad: " + edad + "\n"
+            + "Ciudad: " + ciudad + "\n"
+            + "Pais: " + pais + "\n"
+            + "Telefono: " + telefono + "\n"
+            + "Hobby principal: " + hobby + "\n"
+116.	retornar salida
+117.fin funcion crearSignal
+118.funcion crearFlickr():x
+119.     usuario,x(1000)[{a-z},{A-Z},{BS}]<-- ""
+120.     correoE,x(1000)[{a-z},{A-Z},{BS}]<-- ""
+121.    <<"Ingrese un nombre de usuario: "
+122.    >>usuario
+123.    <<"Ingrese su correo Electronico: "
+124.    >>correoE
+125.    salida <-- salida + "Datos ingresados Flickr\n"
+            + "Nombre de Usuario: "+ usuario + "\n"
+            + "Correo electronico: " + correoE + "\n"
+126.    retornar salida
+127.fin funcion crearFlickr
+128.funcion crearTwitter():x
+129.     salida,x(1000)[{a-z},{A-Z},{BS}]<-- ""
+130.     usuario,x(1000)[{a-z},{A-Z},{BS}]<-- ""
+131.     nombres,x(1000)[{a-z},{A-Z},{BS}]<-- ""
+132.     apellidos,x(1000)[{a-z},{A-Z},{BS}]<-- ""
+133.     idioma,x(1000)[{a-z},{A-Z},{BS}]<-- ""
+134.     edad,i[0-n]
+135.     ciudad,x(1000)[{a-z},{A-Z},{BS}]<-- ""
+136.     pais,x(1000)[{a-z},{A-Z},{BS}]<-- ""
+137.     correoE,x(1000)[{a-z},{A-Z},{BS}]<-- ""
+138.     <<"Ingrese un nombre de usuario: "
+139.     >>usuario
+140.     <<"Ingrese su Nombres completos: "
+141.     >>nombres
+142.     <<"Ingrese sus Apellidos completos: "
+143.     >>apellidos
+144.     <<"Ingrese su edad: "
+145.     >>edad
+146.     <<"Ingrese su ciudad: "
+147.     >>ciudad
+148.     <<"Ingrese su pais: "
+149.     >>pais
+150.     <<"Ingrese su Idioma: "
+151.     >>idioma
+152.     <<"Ingrese su correo electronico: "
+153.     >>correoE
+154.     salida <-- salida + "Datos ingresados Twitter\n"
+                + "Nombre de Usuario: "+ usuario + "\n"
+                + "Nombres: "+ nombres + "\n"
+                + "Apellidos: "+ apellidos + "\n"
+                + "Su edad: " + edad + "\n"
+                + "Ciudad: " + ciudad + "\n"
+                + "Pais: " + pais + "\n"
+                + "Idioma: "+ idioma + "\n"
+                + "Correo electronico: " + correo + "\n"
+155.     retornar salida
+156.fin funcion crearTwitter
+157.funcion crearWhatsapp():x
+158.     salida,x(1000)[{a-z},{A-Z},{BS}]<-- ""
+159.     usuario,x(1000)[{a-z},{A-Z},{BS}]<-- ""
+160.     areaI,x(1000)[{a-z},{A-Z},{BS}]<-- ""
+161.     ciudad,x(1000)[{a-z},{A-Z},{BS}]<-- ""
+162.     pais,x(1000)[{a-z},{A-Z},{BS}]<-- ""
+163.     telefono,i[0-n]
+164.     <<"Ingrese un nombre de usuario: "
+165.     >>usuario
+166.     <<"Ingrese su ciudad: "
+167.     >>ciudad
+168.     <<"Ingrese su pais: "
+169.     >>pais
+170.     <<"Ingrese su telefono: "
+171.     >>telefono
+172.     <<"Ingrese su Area de Interes: "
+173.     >>areaI
+174.     salida <-- salida + "Datos ingresados Whatsapp\n"
+                + "Nombre de Usuario: "+ usuario + "\n"
+                + "Ciudad: " + ciudad + "\n"
+                + "Pais: " + pais + "\n"
+                + "Telefono: " + telefono + "\n"
+                + "Area de Interes: " + areaI + "\n"
+175.     retornar salida
+176.fin funcion crearTelegram
+177.funcion crearInstagram():x
+178.     salida,x(1000)[{a-z},{A-Z},{BS}]<-- ""
+179.     usuario,x(1000)[{a-z},{A-Z},{BS}]<-- ""
+180.     edad,i[0-n]
+181.     ciudad,x(1000)[{a-z},{A-Z},{BS}]<-- ""
+182.     correoE,x(1000)[{a-z},{A-Z},{BS}]<-- ""
+183.     <<"Ingrese un nombre de usuario: "
+184.     >>usuario
+185.     <<"Ingrese su edad: "
+186.     >>edad
+187.     <<"Ingrese su ciudad: "
+188.     >>ciudad
+189.     <<"Ingrese su correo electronico: "
+190.     >>correoE
+191.     salida <-- salida + "Datos ingresados Instagram\n"
+                + "Nombre de Usuario: "+ usuario + "\n"
+                + "Su edad: " + edad + "\n"
+                + "Ciudad: " + ciudad + "\n"
+                + "Correo electronico: " + correo + "\n"
+192.     retornar salida
+193.fin funcion crearInstagram
+194.funcion obtenermensaje(a,i):x
+195.     mensajeFinal,x(1000)[{a-z},{A-Z},{BS}]<--{"Campaña con poca afluencia"},
+                                                 {"Campaña moderada siga adelante"},
+                                                 {"Excelente campaña"}
+196.     salida,x(1000)[{a-z},{A-Z},{BS}]<-- ""
+197.     para (i <-- 0, i < 3, 1)
+198.         Si a >= 1 and a <=5 entonces
+199.             salida <-- mensajeFinal[0]
+200.         De lo contrario
+201.             Si a >=6 and <=15 entonces
+202.             salida <-- mensajeFinal[1]
+203.             De lo contario
+204.                 Si a >=16 entonces 
+205.                     salida <-- mensajeFinal[2]
+206.                 Finsi
+207.             Finsi
+208.         Finsi
+209.     Finpara
+210.     retornar salida
+211.fin funcion obtenermensaje
+212.Fin
