@@ -264,13 +264,13 @@ MENSAJE FINAL
                                                  					{"Excelente campaña"}
 194.     	salida,x(1000)[{a-z},{A-Z},{BS}]<-- ""
 195.     	Para (i <-- 0, i < 3, 1) haga
-196.         		Si a >= 1 and a <=5 entonces
+196.         		Si (a >= 1 and a <=5) entonces
 197.             			salida <-- mensajeFinal[0]
 198.         		De lo contrario
-199.             			Si a >=6 and <=15 entonces
+199.             			Si (a >=6 and <=15) entonces
 200.             				salida <-- mensajeFinal[1]
 201.             			De lo contario
-202.                	 		Si a >=16 entonces 
+202.                	 		Si a (>=16) entonces 
 203.                     			salida <-- mensajeFinal[2]
 204.                 			Finsi
 205.             			Finsi
